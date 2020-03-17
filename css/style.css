@@ -1,0 +1,433 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+body {
+    margin: 0;
+    font-family: 'TT Lakes';
+}
+
+button {
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media (min-width: 320px) {
+    .container {
+        margin: 0 16px;
+    }
+
+    /* -------- Header -------- */
+    header {
+        display: flex;
+        align-items: center;
+        height: 88px;
+        width: 100%;
+    }
+
+    .burger {
+        background-color: #FF3E79;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 24px 16px;
+    }
+
+    .burger__item {
+        display: block;
+        width: 10px;
+        height: 2px;
+        background-color: #fff;
+        position: relative;
+        border-radius: 1px;
+        margin-left: 4px;
+    }
+
+    .burger__item::before,
+    .burger__item::after {
+        content: "";
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        border-radius: 1px;
+    }
+
+    .burger__item::before {
+        width: 18px;
+        height: 2px;
+        top: -8px;
+    }
+
+    .burger__item::after {
+        width: 14px;
+        height: 2px;
+        bottom: -8px;
+    }
+
+    /* ----- Logo ----- */
+    .logo {
+        margin: 18px 16px 18px 0;
+    }
+
+    .logo__icon {
+        display: block;
+        height: 51px;
+        width: 60px;
+        fill: #6B7B84;
+    }
+
+    /* ----- Border ----- */
+    .border__left{
+        height: 32px;
+        width: 2px;
+        background-color: #EAEAEA;
+        display: none;
+    }
+
+    /* ----- Link ----- */
+    .link{
+
+    }
+
+    .link__settings,
+    .link__search,
+    .link__call,
+    .link__message,
+    .link__profile{
+        position: relative;
+        background-color: #FF3E79;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 0;
+    }
+
+    .link__settings {
+        margin: 24px 16px 24px 20px;
+    }
+    .link__settings::before{
+        content: "";
+        position: absolute;
+        left: -20px;
+        top: 5px;
+        height: 32px;
+        width: 2px;
+        background-color: #EAEAEA;
+    }
+
+    .link__search {
+        margin: 24px 16px 24px 0;
+    }
+
+    .link__settings__icon,
+    .link__search__icon,
+    .link__call__icon,
+    .link__message__icon,
+    .link__profile__icon{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 19px;
+        width: 20px;
+        margin: 0;
+    }
+    .link__call,
+    .link__message,
+    .link__profile{
+        display: none;
+    }
+
+    /* -------- Main & content -------- */
+    main {
+        background-color: #F8F8F8;
+    }
+
+    .content__header__tit {
+        position: relative;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: -0.6px;
+        color: #1B1C21;
+        font-weight: bold;
+        padding: 16px 24px 24px 0;
+    }
+
+    .content__header__tit::before {
+        content: "";
+        position: absolute;
+        left: -16px;
+        top: 15px;
+        border-left: 4px solid #41F6D7;
+        height: 40px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+
+    .content__header__nav{
+        display: none;
+    }
+
+    .content__nav {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        white-space: nowrap;
+        font-weight:500;
+    }
+
+    .content__link{
+        color: #7E7E82;
+        margin-right: 25px;
+    }
+
+    .content__link--active {
+        color: #7E7E82;
+        padding: 8px 9px 8px 16px;
+        border: 2px solid #B8FFEC;
+        border-radius: 6px;
+        background-color: #fff;
+        margin-right: 19px;
+    }
+
+    .content__about__info{
+        margin-top: 24px;
+    }
+
+    .content__about__text{
+        height: 90px;
+        width: 288px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        color: #1B1C21;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+
+    .content__about__more{
+        position: relative;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #1B1C21;
+        padding-left: 30px;
+    }
+
+    .content__about__more::before,
+    .content__about__more::after{
+        content: "";
+        display: block;
+        width: 7px;
+        height: 7px;
+        border-top: 2px solid #d5d5d9;
+        border-right: 2px solid #d5d5d9;
+        position: absolute;
+        left: 12px;
+        z-index: 1;
+        transform: translateY(-50%) rotate(135deg);
+    }
+
+    .content__about__more::before{
+        top: 30%;
+    }
+
+    .content__about__more::after{
+        top: 60%;
+    }
+
+    .content__about__img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        left: 0;
+        padding: 20px 0 40px;
+        background-color: #F8F8F8;
+    }
+
+}
+
+@media (min-width: 768px){
+    /* ----- content ----- */
+    /* -------- Container -------- */
+    .container {
+        margin: 0 24px;
+    }
+
+    /* ----- Navbar ----- */
+    .navbar{
+        display: none;
+    }
+
+    /* ----- Burger ----- */
+    .burger {
+        margin-right: 20px;
+    }
+
+    /* ----- Logo ----- */
+    .logo__icon {
+        width: 96px;
+        margin-left: 20px;
+    }
+
+    /* ----- Border ----- */
+    .border__left {
+        display: block;
+    }
+
+    /* ----- Logo ----- */
+    .logo{
+        padding-right: 200px;
+    }
+
+    /* ----- Link ----- */
+    .link__call,
+    .link__message,
+    .link__profile{
+        display: inline-block;
+    }
+
+    .link__call,
+    .link__message{
+        margin-right: 16px;
+    }
+
+    .link__profile{
+        margin-right: 20px;
+    }
+
+    /* ----- Content ----- */
+    .content__nav{
+        margin-bottom: 40px;
+    }
+
+    .content__header__nav{
+        display: none;
+    }
+
+    .content__about{
+        display: flex;
+    }
+
+    .content__about__info{
+        margin: 0;
+        padding: 0;
+    }
+
+    .content__about__img{
+        position: relative;
+        width: 50%;
+        padding: 0;
+    }
+
+    .content__about__text{
+        height: 160px;
+        width: 312px;
+        line-height: 20px;
+    }
+
+    .content__about__img{
+        margin-left: 48px;
+        padding-bottom: 40px;
+        border-radius: 5px;
+    }
+    .content__header__tit::before{
+        left: -23px;
+    }
+}
+
+@media (min-width: 1120px){
+    header{
+        display: none;
+    }
+
+    main{
+        /* display: flex; */
+    }
+
+    /* ----- Navbar ----- */
+    .navbar{
+        color: black;
+        display: flex;
+        background-color: #fff;
+        opacity: .1;
+
+    }
+
+    .navbar__content{
+        width: 320px;
+        background-color: #fff;
+    }
+
+    /* ----- Content ----- */
+    .content__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+    }
+    .content__header__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .content__header__nav__setting{
+        padding-right: 77px;
+    }
+    .content__header__nav__search{
+        padding-right: 55px;
+    }
+
+    .content__header__nav__setting,
+    .content__header__nav__search{
+        position: relative;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: right;
+        letter-spacing: -0.2px;
+        color: #1B1C21;
+    }
+
+    .link__settings,
+    .link__search{
+        margin: 0;
+        position: absolute;
+        top: -6px;
+    }
+
+    .link__search{
+        right: 5px;
+    }
+
+    .link__settings{
+        right: 0;
+        margin-right: 25px;
+    }
+
+    .link__settings::before{
+        display: none;
+    }
+
+    /* ----- content__about ----- */
+    .content__about__text{
+        width: 490px;
+    }
+}
