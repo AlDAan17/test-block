@@ -140,11 +140,11 @@ ul {
         margin: 24px 16px 24px 0;
     }
 
-    .link__settings__icon,
-    .link__search__icon,
-    .link__call__icon,
-    .link__message__icon,
-    .link__profile__icon{
+    .link__settings-icon,
+    .link__search-icon,
+    .link__call-icon,
+    .link__message-icon,
+    .link__profile-icon{
         display: block;
         position: absolute;
         top: 50%;
@@ -169,7 +169,7 @@ ul {
         display: none;
     }
 
-    .content__header__tit {
+    .content__header-tit {
         position: relative;
         font-size: 28px;
         line-height: 40px;
@@ -179,7 +179,7 @@ ul {
         padding: 16px 24px 24px 0;
     }
 
-    .content__header__tit::before {
+    .content__header-tit::before {
         content: "";
         position: absolute;
         left: -16px;
@@ -189,7 +189,7 @@ ul {
         transform: matrix(-1, 0, 0, 1, 0, 0);
     }
 
-    .content__header__nav{
+    .content__header-nav{
         display: none;
     }
 
@@ -221,11 +221,11 @@ ul {
         margin-right: 19px;
     }
 
-    .content__about__info{
+    .content__about-info{
         margin-top: 24px;
     }
 
-    .content__about__text{
+    .content__about-text{
         height: 90px;
         width: 288px;
         font-weight: 500;
@@ -237,7 +237,7 @@ ul {
         margin-bottom: 10px;
     }
 
-    .content__about__more{
+    .content__about-more{
         position: relative;
         font-weight: 600;
         font-size: 16px;
@@ -245,31 +245,32 @@ ul {
         letter-spacing: -0.2px;
         color: #1B1C21;
         padding-left: 30px;
+        background-color: inherit;
     }
 
-    .content__about__more::before,
-    .content__about__more::after{
+    .content__about-more::before,
+    .content__about-more::after{
         content: "";
         display: block;
         width: 7px;
         height: 7px;
-        border-top: 2px solid #d5d5d9;
-        border-right: 2px solid #d5d5d9;
+        border-top: 2px solid #7E7E82;
+        border-right: 2px solid #7E7E82;
         position: absolute;
         left: 12px;
         z-index: 1;
         transform: translateY(-50%) rotate(135deg);
     }
 
-    .content__about__more::before{
+    .content__about-more::before{
         top: 30%;
     }
 
-    .content__about__more::after{
+    .content__about-more::after{
         top: 60%;
     }
 
-    .content__about__img{
+    .content__about-img{
         display: block;
         max-width: 100%;
         height: auto;
@@ -277,6 +278,7 @@ ul {
         left: 0;
         padding: 20px 0 40px;
         background-color: #F8F8F8;
+        margin-left: auto;
     }
 
 }
@@ -335,7 +337,7 @@ ul {
         margin-bottom: 40px;
     }
 
-    .content__header__nav{
+    .content__header-nav{
         display: none;
     }
 
@@ -343,29 +345,28 @@ ul {
         display: flex;
     }
 
-    .content__about__info{
+    .content__about-info{
         margin: 0;
         padding: 0;
     }
 
-    .content__about__img{
+    .content__about-img{
         position: relative;
         width: 50%;
         padding: 0;
     }
 
-    .content__about__text{
+    .content__about-text{
         height: 160px;
         width: 312px;
         line-height: 20px;
     }
 
-    .content__about__img{
-        margin-left: 48px;
+    .content__about-img{
         padding-bottom: 40px;
         border-radius: 5px;
     }
-    .content__header__tit::before{
+    .content__header-tit::before{
         left: -23px;
     }
 }
@@ -404,16 +405,16 @@ ul {
         box-shadow: 1px 0 15px rgb(151, 145, 145);
     }
 
-    .navbar__content__header{
+    .navbar__content-header{
         display: flex;
         margin-bottom: 51px;
     }
 
-    .navbar__content__header__close,
-    .navbar__content__header__search,
-    .navbar__content__icons__call,
-    .navbar__content__icons__message,
-    .navbar__content__icons__profile{
+    .navbar__content-header-close,
+    .navbar__content-header-search,
+    .navbar__content-icons-call,
+    .navbar__content-icons-message,
+    .navbar__content-icons-profile{
         position: relative;
         background-color: #FF3E79;
         width: 40px;
@@ -422,12 +423,12 @@ ul {
         margin: 0;
     }
 
-    .navbar__content__header__close{
+    .navbar__content-header-close{
         margin-right: 20px;
     }
 
-    .navbar__content__header__close__icon,
-    .navbar__content__header__search__icon{
+    .navbar__content-header-close-icon,
+    .navbar__content-header-search-icon{
         display: block;
         position: absolute;
         top: 50%;
@@ -436,24 +437,24 @@ ul {
         margin: 0;
     }
 
-    .navbar__content__header__close__icon{
+    .navbar__content-header-close-icon{
         height: 16px;
         width: 16px;
     }
 
-    .navbar__content__header__logo__icon{
+    .navbar__content-header-logo-icon{
         height: 51px;
         width: 97px;
         fill: #6B7B84;
         margin-right: 75px;
     }
 
-    .navbar__content__header__search__icon{
+    .navbar__content-header-search-icon{
         height: 17px;
         width: 17px;
     }
 
-    .navbar__content__menu__items{
+    .navbar__content-menu-items{
         font-size: 16px;
         line-height: 24px;
         letter-spacing: -0.2px;
@@ -462,16 +463,16 @@ ul {
         margin-bottom: 247px;
     }
 
-    .navbar__content__menu__item{
+    .navbar__content-menu-item{
         padding-bottom: 32px;
     }
 
-    .navbar__content__menu__item--active{
+    .navbar__content-menu-item--active{
         position: relative;
         color: #7E7E82;
     }
 
-    .navbar__content__menu__item--active::before{
+    .navbar__content-menu-item--active::before{
         content: "";
         position: absolute;
         left: -24px;
@@ -481,20 +482,20 @@ ul {
         transform: matrix(-1, 0, 0, 1, 0, 0);
         }
 
-    .navbar__content__icons{
+    .navbar__content-icons{
         display:flex;
         margin-bottom: 16px;
     }
 
-    .navbar__content__icons__call,
-    .navbar__content__icons__message,
-    .navbar__content__icons__profile{
+    .navbar__content-icons-call,
+    .navbar__content-icons-message,
+    .navbar__content-icons-profile{
         margin-left: 16px;
     }
 
-    .navbar__content__icons__call__item,
-    .navbar__content__icons__message__item,
-    .navbar__content__icons__profile__item{
+    .navbar__content-icons-call-item,
+    .navbar__content-icons-message-item,
+    .navbar__content-icons-profile-item{
         display: block;
         position: absolute;
         top: 50%;
@@ -503,7 +504,7 @@ ul {
         margin: 0;
     }
 
-    .navbar__content__contacts__email{
+    .navbar__content-contacts-email{
         font-size: 16px;
         font-weight: 600;
         line-height: 24px;
@@ -512,7 +513,7 @@ ul {
         padding-bottom: 12px;
     }
 
-    .navbar__content__contacts__number{
+    .navbar__content-contacts-number{
         font-size: 24px;
         font-weight: 700;
         line-height: 32px;
@@ -521,7 +522,7 @@ ul {
         padding-bottom: 40px;
     }
 
-    .navbar__content__language{
+    .navbar__content-language{
         display: flex;
         font-size: 16px;
         font-weight: 600;
@@ -530,14 +531,14 @@ ul {
         color: #1B1C21;
     }
 
-    .navbar__content__language__ru,
-    .navbar__content__language__en,
-    .navbar__content__language__ch{
+    .navbar__content-language-ru,
+    .navbar__content-language-en,
+    .navbar__content-language-ch{
         cursor: pointer;
         padding-right: 7px;
     }
 
-    .navbar__content__language__active{
+    .navbar__content-language--active{
         color: #7E7E82;
     }
 
@@ -548,21 +549,21 @@ ul {
         align-items: center;
         padding-top: 20px;
     }
-    .content__header__nav{
+    .content__header-nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    .content__header__nav__setting{
+    .content__header-nav-setting{
         padding-right: 77px;
     }
-    .content__header__nav__search{
+    .content__header-nav-search{
         padding-right: 55px;
     }
 
-    .content__header__nav__setting,
-    .content__header__nav__search{
+    .content__header-nav-setting,
+    .content__header-nav-search{
         position: relative;
         font-weight: 600;
         font-size: 16px;
@@ -593,7 +594,7 @@ ul {
     }
 
     /* ----- content__about ----- */
-    .content__about__text{
+    .content__about-text{
         width: 490px;
     }
 }
